@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<form action="" method="POST">
+		{% csrf_token %}
+		<p>Are you sure you want to send "{{ object }}" to the cold void?</p>
+		<input class="btn btn-dark" type="submit" value=" yeah, whatever">
+	</form>
+{% endblock %}
